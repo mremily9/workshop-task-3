@@ -4,19 +4,14 @@ let sticks = [];
 let alpha = 255;
 
 function preload() {
-  // img0 = loadImage('images/img0.png');
-  // img1 = loadImage('images/img1.png');
-  // img2 = loadImage('images/img2.png');
 
-
-  //load imgs
   for(i = 0; i < 18; i++){
-    imgs[i] = loadImage('/images/img'+ i + '.png');
+    imgs[i] = loadImage('images/img'+ i + '.png');
   }
 
   //load stickers
   for(n = 0; n < 12; n++){
-    sticks[n] = loadImage('/images/sticker'+ n + '.png');
+    sticks[n] = loadImage('images/sticker'+ n + '.png');
   }
 
 

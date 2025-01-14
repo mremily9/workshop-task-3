@@ -1,0 +1,70 @@
+// let img0, img1, img2, img3, img4;
+let imgs = [];
+let sticks = [];
+let alpha = 255;
+
+function preload() {
+  // img0 = loadImage('images/img0.png');
+  // img1 = loadImage('images/img1.png');
+  // img2 = loadImage('images/img2.png');
+
+
+  //load imgs
+  for(i = 0; i < 18; i++){
+    imgs[i] = loadImage('/images/img'+ i + '.png');
+  }
+
+  //load stickers
+  for(n = 0; n < 12; n++){
+    sticks[n] = loadImage('/images/sticker'+ n + '.png');
+  }
+
+
+}
+
+function setup() {
+  createCanvas(600, 440);
+  frameRate(1);
+  // img.resize(300, 0);
+
+  background(0);
+  imageMode(CORNER);
+
+  //top left
+  image(imgs[int(random(0, 17))], 10, 10, width/2 - 20 , height/2 - 10);
+  //top right
+  image(imgs[int(random(0, 17))], width/2  , 10, width/2 - 20, height/2 - 10);
+  //bottom left
+  image(imgs[int(random(0, 17))], 10, height/2 + 10, width/2 - 20, height/2 - 20);
+  //bottom right
+  image(imgs[int(random(0, 17))], width/2 , height/2 + 10, width/2 - 20, height/2 - 20);
+
+  //inital set up of stickers
+  imageMode(CENTER);
+  for(j = 0 ; j < random(1, 2); j++){
+    scale = random(50, 120);
+    image(sticks[int(random(0, 11))], random(0, width),  random(0, height), scale, scale);
+  }
+}
+
+function draw() {
+  //stickers
+  filter(DILATE);
+  imageMode(CENTER);
+  for(j = 0 ; j < random(1, 2); j++){
+    scale = random(50, 200);
+    image(sticks[int(random(0, 11))], random(0, width),  random(0, height), scale, scale);
+  }
+
+  for(k = 0 ; k < random(1, 8); k++){
+    let x = random(width);
+    let y = random(height);
+    let c = get(int(x), int(y));
+  
+    fill(c);
+    noStroke();
+    circle(x, y, random(20, 50));
+  }
+
+
+}

@@ -14,18 +14,18 @@ function preload() {
   //   sticks[n] = loadImage('images/sticker'+ n + '.png');
   // }
 
-  sticks[0] = loadImage('/images/sticker0.png');
-  sticks[1] = loadImage('/images/sticker1.png');
-  sticks[2] = loadImage('/images/sticker2.png');
-  sticks[3] = loadImage('/images/sticker3.png');
-  sticks[4] = loadImage('/images/sticker4.png');
-  sticks[5] = loadImage('/images/sticker5.png');
-  sticks[6] = loadImage('/images/sticker6.png');
-  sticks[7] = loadImage('/images/sticker7.png');
-  sticks[8] = loadImage('/images/sticker8.png');
-  sticks[9] = loadImage('/images/sticker9.png');
-  sticks[10] = loadImage('/images/sticker10.png');
-  sticks[11] = loadImage('/images/sticker11.png');
+  sticks[0] = loadImage('images/sticker0.png');
+  sticks[1] = loadImage('images/sticker1.png');
+  sticks[2] = loadImage('images/sticker2.png');
+  sticks[3] = loadImage('images/sticker3.png');
+  sticks[4] = loadImage('images/sticker4.png');
+  sticks[5] = loadImage('images/sticker5.png');
+  sticks[6] = loadImage('images/sticker6.png');
+  sticks[7] = loadImage('images/sticker7.png');
+  sticks[8] = loadImage('images/sticker8.png');
+  sticks[9] = loadImage('images/sticker9.png');
+  sticks[10] = loadImage('images/sticker10.png');
+  sticks[11] = loadImage('images/sticker11.png');
 
 
 }
